@@ -1,0 +1,20 @@
+# 📚 Curated Resources
+
+Official documentation is the primary source; courses and blogs are supporting explanations.
+
+| Topic | Official documentation | Official project | Free learning | Practice | Reference |
+|---|---|---|---|---|---|
+| Git | [Git Book](https://git-scm.com/book/en/v2) | [git](https://github.com/git/git) | [GitHub Skills](https://skills.github.com/) | [Learn Git Branching](https://learngitbranching.js.org/) | [Atlassian Git tutorials](https://www.atlassian.com/git/tutorials) |
+| HTML/CSS | [MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development) | [WHATWG HTML](https://github.com/whatwg/html) | [freeCodeCamp](https://www.freecodecamp.org/learn/2022/responsive-web-design/) | [Frontend Mentor](https://www.frontendmentor.io/) | [web.dev](https://web.dev/learn/) |
+| JavaScript | [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide) | [ECMAScript](https://github.com/tc39/ecma262) | [javascript.info](https://javascript.info/) | [Exercism](https://exercism.org/tracks/javascript) | [You Don’t Know JS](https://github.com/getify/You-Dont-Know-JS) |
+| TypeScript | [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) | [TypeScript](https://github.com/microsoft/TypeScript) | [Total TypeScript Essentials](https://www.totaltypescript.com/tutorials) | [Type Challenges](https://github.com/type-challenges/type-challenges) | [TS Playground](https://www.typescriptlang.org/play) |
+| React | [React Learn](https://react.dev/learn) | [react](https://github.com/facebook/react) | [React docs tutorial](https://react.dev/learn/tutorial-tic-tac-toe) | [Frontend Mentor](https://www.frontendmentor.io/) | [React Router](https://reactrouter.com/home) |
+| Node/Express | [Node docs](https://nodejs.org/docs/latest/api/) | [node](https://github.com/nodejs/node) | [freeCodeCamp Node course](https://www.youtube.com/@freecodecamp) | [HackerRank](https://www.hackerrank.com/) | [Express guide](https://expressjs.com/en/guide/routing.html) |
+| MongoDB | [MongoDB University](https://learn.mongodb.com/) | [mongo](https://github.com/mongodb/mongo) | [MongoDB docs](https://www.mongodb.com/docs/) | [MongoDB playground](https://www.mongodb.com/docs/mongodb-vscode/playgrounds/) | [Mongoose docs](https://mongoosejs.com/docs/) |
+
+## How to choose a resource
+
+1. Read the official page first and build its smallest example.
+2. Use one course only when you need sequence and demonstrations.
+3. Prefer an exercise that produces feedback over passive watching.
+4. Save the source URL and a one-sentence note in your project README.

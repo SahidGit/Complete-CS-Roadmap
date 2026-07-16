@@ -1,0 +1,17 @@
+# ▶️ High-Quality YouTube Learning
+
+| Channel | Best for | Start here |
+|---|---|---|
+| [freeCodeCamp.org](https://www.youtube.com/@freecodecamp) | Long-form, community-reviewed courses | [Responsive Web Design](https://www.youtube.com/@freecodecamp) |
+| [Traversy Media](https://www.youtube.com/@TraversyMedia) | Practical project walkthroughs | JavaScript and React playlists |
+| [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified) | Focused web concepts | JavaScript and React explainers |
+| [Kevin Powell](https://www.youtube.com/@KevinPowell) | Modern CSS and accessibility-minded layouts | CSS grid and responsive series |
+| [Fireship](https://www.youtube.com/@Fireship) | Fast technology orientation | 100-second overviews, then docs |
+| [ThePrimeagen](https://www.youtube.com/@ThePrimeTime) | Engineering perspective and tooling | Developer workflow discussions |
+| [Hussein Nasser](https://www.youtube.com/@hnasr) | Networking, backend and databases | HTTP and backend architecture videos |
+| [Academind](https://www.youtube.com/@academind) | Structured framework courses | React and Node courses |
+| [Programming with Mosh](https://www.youtube.com/@programmingwithmosh) | Beginner-friendly foundations | JavaScript fundamentals |
+| [TechWorld with Nana](https://www.youtube.com/@TechWorldwithNana) | DevOps orientation | Deployment and infrastructure primers |
+
+> [!TIP]
+> Watch at 1× speed when coding along. Pause before the instructor solves a problem and attempt it yourself.
