@@ -1,4 +1,4 @@
-# 🚀 Complete Computer Science Roadmap
+# 🚀 OpenCS - Complete Computer Science Roadmap
 
 <div align="center">
 
@@ -12,7 +12,7 @@
 
 **⏱️ Duration:** 10 Weeks | **📚 Total Hours:** 200+ | **📈 Difficulty:** Beginner → Advanced | **🎯 Goal:** Professional Web Developer
 
-[🌍 Website](#https://sahidgit.github.io/Complete-CS-Roadmap/) · [📖 Documentation](#https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/RESOURCES.md) · [💬 Discussions](https://github.com/SahidGit/Complete-CS-Roadmap/discussions) · [🤝 Contributing](https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/CONTRIBUTING.md)
+[🌍 Website](https://sahidgit.github.io/Complete-CS-Roadmap/) · [📖 Documentation](RESOURCES.md) · [💬 Discussions](https://github.com/SahidGit/Complete-CS-Roadmap/discussions) · [🤝 Contributing](CONTRIBUTING.md)
 
 </div>
 
@@ -339,7 +339,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 **A:** Yes! See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### Q: Is there an official website?
-**A:** Yes! Visit [[text](https://sahidgit.github.io/Complete-CS-Roadmap/)](#) (coming soon).
+**A:** Yes! Visit [Website](https://sahidgit.github.io/Complete-CS-Roadmap/) (coming soon).
 **B:** HELP ME BUY OpenCS.Dev
 
 ---
