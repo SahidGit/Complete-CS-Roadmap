@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![CS Roadmap Banner](assets/banners/cs-roadmap-banner.png)
+![CS Roadmap Banner](/assets/banners/OpenCS%20Github%20Image.png)
 
 [![GitHub Stars](https://img.shields.io/github/stars/SahidGit/Complete-CS-Roadmap?style=for-the-badge&logo=github)](https://github.com/SahidGit/Complete-CS-Roadmap)
 [![GitHub Forks](https://img.shields.io/github/forks/SahidGit/Complete-CS-Roadmap?style=for-the-badge&logo=github)](https://github.com/SahidGit/Complete-CS-Roadmap/fork)
@@ -12,7 +12,7 @@
 
 **⏱️ Duration:** 10 Weeks | **📚 Total Hours:** 200+ | **📈 Difficulty:** Beginner → Advanced | **🎯 Goal:** Professional Web Developer
 
-[🌍 Website](#) · [📖 Documentation](#) · [💬 Discussions](https://github.com/SahidGit/Complete-CS-Roadmap/discussions) · [🤝 Contributing](CONTRIBUTING.md)
+[🌍 Website](#https://sahidgit.github.io/Complete-CS-Roadmap/) · [📖 Documentation](#https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/RESOURCES.md) · [💬 Discussions](https://github.com/SahidGit/Complete-CS-Roadmap/discussions) · [🤝 Contributing](https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/CONTRIBUTING.md)
 
 </div>
 
@@ -20,23 +20,23 @@
 
 ## 📋 Table of Contents
 
-- [About This Roadmap](#about-this-roadmap)
-- [Repository Structure](#repository-structure)
-- [Learning Path](#learning-path)
-- [How to Use](#how-to-use)
-- [Recommended Study Routine](#recommended-study-routine)
-- [Progress Tracker](#progress-tracker)
-- [Learning Philosophy](#learning-philosophy)
-- [Repository Rules](#repository-rules)
-- [FAQ](#faq)
-- [Contributing](#contributing)
-- [License](#license)
+- [About This Roadmap](#-about-this-roadmap)
+- [Repository Structure](#-repository-structure)
+- [Learning Path](#️-learning-path)
+- [How to Use](#-how-to-use)
+- [Recommended Study Routine](#-recommended-study-routine)
+- [Progress Tracker](#-progress-tracker)
+- [Learning Philosophy](#-learning-philosophy)
+- [Repository Rules](#-repository-rules)
+- [FAQ](#-faq)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ---
 
 ## 🎯 About This Roadmap
 
-This is a **complete, structured Computer Science learning roadmap** designed to take you from absolute beginner to professional software engineer in **10 weeks**. 
+This is a **complete, structured Computer Science learning roadmap** designed to take you from absolute beginner to professional software engineer in **10 weeks***. 
 
 ### Why This Roadmap?
 
@@ -331,7 +331,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 ### Q: What if I get stuck?
 **A:** 
 1. Check the resources section
-2. Ask in [GitHub Discussions](https://github.com/SahidGit/Complete-CS-Roadmap/discussions)
+2. Ask in [GitHub Discussions](https://github.com/SahidGit/Complete-CS-Roadmap)[!Coming Soon]
 3. Review the daily schedule
 4. Search for similar issues
 
@@ -339,13 +339,14 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 **A:** Yes! See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### Q: Is there an official website?
-**A:** Yes! Visit [complete-cs-roadmap.dev](#) (coming soon).
+**A:** Yes! Visit [[text](https://sahidgit.github.io/Complete-CS-Roadmap/)](#) (coming soon).
+**B:** HELP ME BUY OpenCS.Dev
 
 ---
 
 ## 📈 Star History
 
-[![Star History Chart](https://api.github.com/repos/SahidGit/Complete-CS-Roadmap/stargazers)](https://github.com/SahidGit/Complete-CS-Roadmap/stargazers)
+[![Star History Chart](https://starchart.cc/SahidGit/Complete-CS-Roadmap.svg)](https://github.com/SahidGit/Complete-CS-Roadmap/stargazers)
 
 ---
 
@@ -396,6 +397,6 @@ git clone https://github.com/SahidGit/Complete-CS-Roadmap.git
 
 ### Built with ❤️ by the community
 
-[⬆ Back to top](#top)
+[⬆ Back to top](#top)🔼
 
 </div>
