@@ -3,19 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OpenCS — Complete CS Roadmap</title>
-<meta name="description" content="Free, open-source 10-week CS roadmap: Git, HTML, CSS, JS, React, Node, MongoDB and 30+ projects.">
-  <link rel="canonical" href="https://sahidgit.github.io/Complete-CS-Roadmap/">
-  <meta property="og:title" content="OpenCS — Complete CS Roadmap">
-  <meta property="og:description" content="Free, open-source 10-week CS roadmap with 30+ projects to build your portfolio.">
-  <meta property="og:image" content="https://sahidgit.github.io/Complete-CS-Roadmap/assets/banners/OpenCS%20Github%20Image.png">
-  <meta property="og:url" content="https://sahidgit.github.io/Complete-CS-Roadmap/">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="OpenCS — Complete CS Roadmap">
-  <meta name="twitter:description" content="Free, open-source 10-week CS roadmap with 30+ projects to build your portfolio.">
-  <meta name="twitter:image" content="https://sahidgit.github.io/Complete-CS-Roadmap/assets/banners/OpenCS%20Github%20Image.png">
-  <link rel="icon" type="image/jpeg" href="/assets/icons/favicon1-CS.jpeg">
+<title>OpenCS Complete CS Roadmap — 10 weeks, zero to job-ready</title>
+<meta name="description" content="A free, open-source 10-week roadmap from Git basics to MongoDB deployment. 220+ hours, 30 projects, no fluff.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon-200.png">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#6E56CF">
+
+<!-- Open Graph / Social Media -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://github.com/SahidGit/Complete-CS-Roadmap">
+<meta property="og:title" content="Complete CS Roadmap — Zero to Job-Ready in 10 Weeks">
+<meta property="og:description" content="A complete, free, open-source roadmap: Git → HTML/CSS → JS → TS → React → Node.js → MongoDB. 220+ hours, 30 projects, 500+ resources.">
+<meta property="og:image" content="https://github.com/SahidGit/Complete-CS-Roadmap/raw/main/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://github.com/SahidGit/Complete-CS-Roadmap">
+<meta property="twitter:title" content="OpenCS Complete CS Roadmap — 10 Weeks to Job-Ready Developer">
+<meta property="twitter:description" content="Free, open-source. 220+ hours, 30 projects, 500+ resources. Start with Week 01 →">
+<meta property="twitter:image" content="https://github.com/SahidGit/Complete-CS-Roadmap/raw/main/assets/og-image.png">
+
+<!-- SEO -->
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="roadmap, web development, learning path, open source, free, git, react, nodejs, mongodb">
+<link rel="canonical" href="https://github.com/SahidGit/Complete-CS-Roadmap">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -390,7 +408,10 @@
   .week{
     position:relative;
     padding:0 0 36px 32px;
+    display:block;
+    transition:transform .15s ease;
   }
+  .week:hover{transform:translateX(4px);}
   .week:last-child{padding-bottom:0;}
   .week::before{
     content:'';
@@ -513,6 +534,49 @@
   }
   footer .foot-links a:hover{color:var(--text);}
 
+  /* scroll progress bar */
+  .scroll-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    height:2px;
+    background:linear-gradient(90deg, var(--accent) 0%, #9d8bf0 100%);
+    z-index:100;
+    width:0%;
+    transition:width .1s linear;
+  }
+
+  /* back to top button */
+  .back-to-top{
+    position:fixed;
+    bottom:24px;
+    right:24px;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:var(--bg-raised);
+    border:1px solid var(--line-strong);
+    color:var(--text);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .3s, transform .2s;
+    z-index:40;
+  }
+  .back-to-top.visible{
+    opacity:1;
+    pointer-events:all;
+  }
+  .back-to-top:hover{
+    background:var(--accent-soft);
+    border-color:var(--accent-line);
+    transform:translateY(-3px);
+  }
+  .back-to-top svg{width:18px;height:18px;}
+
   /* reveal on scroll */
   .reveal{
     opacity:0;
@@ -524,13 +588,20 @@
 </head>
 <body>
 
+<div class="scroll-bar"></div>
 <div class="bg-grid"></div>
 <div class="orb orb-1"></div>
 <div class="orb orb-2"></div>
 
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <polyline points="18 15 12 9 6 15"></polyline>
+  </svg>
+</button>
+
 <nav>
   <div class="wrap">
-    <div class="brand"><span class="brand-dot"></span>OpenCS-complete-cs-roadmap</div>
+    <div class="brand"><span class="brand-dot"></span>complete-cs-roadmap</div>
     <div class="nav-links">
       <a href="#roadmap">Roadmap</a>
       <a href="#stack">Stack</a>
@@ -544,7 +615,7 @@
   <div class="wrap">
     <div class="eyebrow">MIT licensed · <strong>open source</strong> · community maintained</div>
     <h1 class="headline">Zero to job-ready <span class="grad">in 10 weeks.</span></h1>
-    <p class="sub">A complete, sequenced roadmap through Git, HTML, CSS, JavaScript, TypeScript, React, Node.js, and MongoDB — with 30+ real projects to build along the way.</p>
+    <p class="sub">A complete, sequenced roadmap through Git, HTML, CSS, JavaScript, TypeScript, React, Node.js, and MongoDB — with 30 real projects to build along the way.</p>
 
     <div class="hero-ctas">
       <a class="btn btn-primary" href="https://github.com/SahidGit/Complete-CS-Roadmap" target="_blank" rel="noopener">
@@ -607,46 +678,46 @@
     </div>
 
     <div class="timeline reveal">
-      <div class="week done">
+      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-01.md" target="_blank" rel="noopener" class="week done" style="text-decoration:none;">
         <div class="week-row"><span class="week-tag">WEEK_01</span><span class="week-title">Git, GitHub &amp; Linux CLI</span></div>
         <div class="week-meta"><span class="diff diff-b">Beginner</span><span>20 hrs</span><span>3 projects</span></div>
-      </div>
-      <div class="week">
+      </a>
+      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-02.md" target="_blank" rel="noopener" class="week" style="text-decoration:none;">
         <div class="week-row"><span class="week-tag">WEEK_02</span><span class="week-title">HTML5 &amp; Semantic Markup</span></div>
         <div class="week-meta"><span class="diff diff-b">Beginner</span><span>18 hrs</span><span>3 projects</span></div>
-      </div>
-      <div class="week">
+      </a>
+      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-03.md" target="_blank" rel="noopener" class="week" style="text-decoration:none;">
         <div class="week-row"><span class="week-tag">WEEK_03</span><span class="week-title">CSS &amp; Responsive Design</span></div>
         <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>22 hrs</span><span>3 projects</span></div>
-      </div>
-      <div class="week">
+      </a>
+      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-04.md" target="_blank" rel="noopener" class="week" style="text-decoration:none;">
         <div class="week-row"><span class="week-tag">WEEK_04</span><span class="week-title">JavaScript Basics</span></div>
         <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>24 hrs</span><span>3 projects</span></div>
-      </div>
-      <div class="week">
+      </a>
+      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-05.md" target="_blank" rel="noopener" class="week" style="text-decoration:none;">
         <div class="week-row"><span class="week-tag">WEEK_05</span><span class="week-title">Advanced JavaScript</span></div>
         <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>26 hrs</span><span>3 projects</span></div>
-      </div>
-      <div class="week">
+      </a>
+      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-06.md" target="_blank" rel="noopener" class="week" style="text-decoration:none;">
         <div class="week-row"><span class="week-tag">WEEK_06</span><span class="week-title">TypeScript</span></div>
         <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>16 hrs</span><span>2 projects</span></div>
-      </div>
-      <div class="week">
+      </a>
+      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-07.md" target="_blank" rel="noopener" class="week" style="text-decoration:none;">
         <div class="week-row"><span class="week-tag">WEEK_07</span><span class="week-title">React Fundamentals</span></div>
         <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
-      </div>
-      <div class="week">
+      </a>
+      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-08.md" target="_blank" rel="noopener" class="week" style="text-decoration:none;">
         <div class="week-row"><span class="week-tag">WEEK_08</span><span class="week-title">Advanced React</span></div>
         <div class="week-meta"><span class="diff diff-a">Advanced</span><span>26 hrs</span><span>3 projects</span></div>
-      </div>
-      <div class="week">
+      </a>
+      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-09.md" target="_blank" rel="noopener" class="week" style="text-decoration:none;">
         <div class="week-row"><span class="week-tag">WEEK_09</span><span class="week-title">Node.js &amp; Express</span></div>
         <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
-      </div>
-      <div class="week">
+      </a>
+      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-10.md" target="_blank" rel="noopener" class="week" style="text-decoration:none;">
         <div class="week-row"><span class="week-tag">WEEK_10</span><span class="week-title">MongoDB &amp; Deployment</span></div>
         <div class="week-meta"><span class="diff diff-a">Advanced</span><span>20 hrs</span><span>3 projects</span></div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -706,7 +777,7 @@
 
 <footer>
   <div class="wrap">
-    <div class="brand">Complete CS Roadmap · MIT License</div>
+    <div class="brand">OpenCS Complete CS Roadmap · MIT License</div>
     <div class="foot-links">
       <a href="https://github.com/SahidGit/Complete-CS-Roadmap" target="_blank" rel="noopener">GitHub</a>
       <a href="https://github.com/SahidGit/Complete-CS-Roadmap/discussions" target="_blank" rel="noopener">Discussions</a>
@@ -716,11 +787,72 @@
 </footer>
 
 <script>
+  // Scroll progress bar
+  const scrollBar = document.querySelector('.scroll-bar');
+  window.addEventListener('scroll', () => {
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrolled = (window.scrollY / scrollHeight) * 100;
+    scrollBar.style.width = scrolled + '%';
+  });
+
+  // Back to top button
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > 300){
+      backToTop.classList.add('visible');
+    } else {
+      backToTop.classList.remove('visible');
+    }
+  });
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+
+  // Reveal on scroll
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
   }, {threshold:0.15});
   revealEls.forEach(el => io.observe(el));
+
+  // Animated counters
+  const statsSection = document.querySelector('.stats-grid');
+  const statNums = document.querySelectorAll('.stat-num');
+  let animated = false;
+
+  const animateNumbers = () => {
+    if(animated) return;
+    animated = true;
+
+    statNums.forEach((el) => {
+      const text = el.textContent;
+      const num = parseInt(text.replace(/\D/g, ''));
+      if(!isNaN(num)){
+        let current = 0;
+        const increment = Math.ceil(num / 40);
+        const timer = setInterval(() => {
+          current += increment;
+          if(current >= num){
+            current = num;
+            clearInterval(timer);
+          }
+          const formatted = current.toString();
+          el.textContent = text.includes('+') ? formatted + '+' : formatted;
+        }, 20);
+      }
+    });
+  };
+
+  const observeStats = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if(e.isIntersecting){
+        animateNumbers();
+        observeStats.unobserve(statsSection);
+      }
+    });
+  }, {threshold: 0.5});
+
+  observeStats.observe(statsSection);
 </script>
 
 </body>
