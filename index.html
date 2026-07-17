@@ -266,6 +266,14 @@
     margin:0 auto 24px;
     color: var(--text);
   }
+  .main-txt {
+    background: linear-gradient(180deg, #ffffff 15%, #b0b0b5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline;
+  }
   .grad{
     background:linear-gradient(120deg, #fff 20%, var(--accent) 65%, #9d8bf0 100%);
     -webkit-background-clip:text;
@@ -692,14 +700,17 @@
 
   .license-note {
     display: inline-flex;
-    align-items: center;
-    gap: 6px;
+    align-items: flex-start;
+    gap: 8px;
     font-size: 13px;
     color: var(--text-dim);
     background: rgba(110, 86, 207, 0.05);
     border: 1px dashed var(--accent-line);
     padding: 6px 12px;
     border-radius: 8px;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: left;
   }
   .eyebrow + .license-note {
     margin-top: -16px;
@@ -710,6 +721,7 @@
     height: 14px;
     color: var(--accent);
     flex-shrink: 0;
+    margin-top: 3px;
   }
   .footer-left {
     display: flex;
@@ -786,7 +798,7 @@
       <svg class="license-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
       <span>100% Free to modify, share, and use for commercial or personal projects</span>
     </div>
-    <h1 class="headline">Zero to job-ready <span class="grad">in 10 weeks.</span></h1>
+    <h1 class="headline"><span class="main-txt">Zero to job-ready</span> <span class="grad">in 10 weeks.</span></h1>
     <p class="sub">A complete, sequenced roadmap through Git, HTML, CSS, JavaScript, TypeScript, React, Node.js, and MongoDB — with 30 real projects to build along the way.</p>
 
     <div class="hero-ctas">
