@@ -266,20 +266,21 @@
     margin:0 auto 24px;
     color: var(--text);
   }
-  .main-txt {
-    background: linear-gradient(180deg, #ffffff 15%, #b0b0b5 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    display: inline;
+  .badge {
+    background: rgba(110, 86, 207, 0.18);
+    border: 1px solid rgba(110, 86, 207, 0.4);
+    padding: 0.1em 0.4em;
+    border-radius: 0.3em;
+    display: inline-block;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: opacity 0.25s ease-in-out;
   }
   .grad{
     background:linear-gradient(120deg, #fff 20%, var(--accent) 65%, #9d8bf0 100%);
     -webkit-background-clip:text;
     background-clip:text;
     color:transparent;
-    transition: opacity 0.25s ease-in-out;
   }
 
   .sub{
@@ -798,7 +799,7 @@
       <svg class="license-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
       <span>100% Free to modify, share, and use for commercial or personal projects</span>
     </div>
-    <h1 class="headline"><span class="main-txt">Zero to job-ready</span> <span class="grad">in 10 weeks.</span></h1>
+    <h1 class="headline">Zero to job-ready <span class="badge"><span class="grad">in 10 weeks.</span></span></h1>
     <p class="sub">A complete, sequenced roadmap through Git, HTML, CSS, JavaScript, TypeScript, React, Node.js, and MongoDB — with 30 real projects to build along the way.</p>
 
     <div class="hero-ctas">
@@ -962,7 +963,7 @@
 
 <section class="cta-band">
   <div class="wrap reveal">
-    <h2>Start <span class="grad">with Week 01.</span></h2>
+    <h2>Start <span class="badge"><span class="grad">with Week 01.</span></span></h2>
     <p>Fork it, clone it, or just star it for later. It's free and it stays free.</p>
     <div class="hero-ctas">
       <a class="btn btn-primary" href="https://github.com/SahidGit/Complete-CS-Roadmap" target="_blank" rel="noopener">Get the roadmap →</a>
@@ -993,6 +994,7 @@
 
 <script>
   // Dynamic headline rotation
+  const dynamicBadge = document.querySelector('.headline .badge');
   const dynamicText = document.querySelector('.headline .grad');
   const phrases = [
     "in 10 weeks.",
@@ -1003,11 +1005,11 @@
   let phraseIndex = 0;
   
   setInterval(() => {
-    dynamicText.style.opacity = 0;
+    dynamicBadge.style.opacity = 0;
     setTimeout(() => {
       phraseIndex = (phraseIndex + 1) % phrases.length;
       dynamicText.textContent = phrases[phraseIndex];
-      dynamicText.style.opacity = 1;
+      dynamicBadge.style.opacity = 1;
     }, 250);
   }, 2000);
 
