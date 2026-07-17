@@ -11,6 +11,9 @@
 | Kanban board | Advanced | 18h | React, Context/Redux | Model shared state and accessible interaction. |
 | Task API | Advanced | 16h | Node, Express | Design REST routes, validation and error handling. |
 | Full-stack notes | Advanced | 24h | React, Node, MongoDB | Deploy a complete application with configuration discipline. |
+| AI Code Reviewer | Advanced | 20h | Node, Express, Gemini API | Secure API that uses static analysis & LLMs to audit code. |
+| Vector PDF Search | Advanced | 24h | Node, LangChain, ChromaDB | Implementation of RAG pipelines for contextual Q&A engines. |
+
 
 ## Project standard
 

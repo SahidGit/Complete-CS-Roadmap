@@ -12,6 +12,9 @@
 | [Academind](https://www.youtube.com/@academind)                       | Structured framework courses                | React and Node courses                                         |
 | [Programming with Mosh](https://www.youtube.com/@programmingwithmosh) | Beginner-friendly foundations               | JavaScript fundamentals                                        |
 | [TechWorld with Nana](https://www.youtube.com/@TechWorldwithNana)     | DevOps orientation                          | Deployment and infrastructure primers                          |
+| [Sheryians AI School](https://www.youtube.com/@SheryiansAI)           | Generative AI, RAG and Agentic LLM systems  | LangChain, Vector Database and AI Agent playlists              |
+| [Chai aur Code](https://www.youtube.com/@chaiaurcode)                 | Full Stack, JS and Backend developments     | Chai aur Backend playlist (Express & Node)                     |
+
 
 > [!TIP]
 > Watch at 1× speed when coding along. Pause before the instructor solves a problem and attempt it yourself.
