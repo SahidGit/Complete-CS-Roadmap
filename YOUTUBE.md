@@ -14,7 +14,11 @@
 | [TechWorld with Nana](https://www.youtube.com/@TechWorldwithNana)     | DevOps orientation                          | Deployment and infrastructure primers                          |
 | [Sheryians AI School](https://www.youtube.com/@SheryiansAI)           | Generative AI, RAG and Agentic LLM systems  | LangChain, Vector Database and AI Agent playlists              |
 | [Chai aur Code](https://www.youtube.com/@chaiaurcode)                 | Full Stack, JS and Backend developments     | Chai aur Backend playlist (Express & Node)                     |
+| [Patrick Collins](https://www.youtube.com/@PatrickAlphaC)             | Smart contract development & security audits| Solidity, Auditing & Web3 Security courses                     |
+| [Solana Bytes](https://www.youtube.com/@SolanaFndn)                   | Solana program & Anchor tutorials           | Solana development shorts & anchor guides                      |
+| [Nader Dabit](https://www.youtube.com/@naderdabit)                     | Full-stack Web3 & Solana tutorials          | Building Solana DApps with React & Anchor                      |
 
+---
 
 > [!TIP]
 > Watch at 1× speed when coding along. Pause before the instructor solves a problem and attempt it yourself.

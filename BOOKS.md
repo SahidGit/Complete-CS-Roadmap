@@ -7,6 +7,10 @@
 | 3 | *Grokking Algorithms* — Aditya Bhargava | Beginner | Visual introduction to algorithmic thinking. |
 | 4 | *Refactoring* — Martin Fowler | Intermediate | Teaches safe, incremental improvement of working code. |
 | 5 | *Designing Data-Intensive Applications* — Martin Kleppmann | Advanced | Connects data systems concepts to real architecture decisions. |
+| 6 | *The Rust Programming Language* — Steve Klabnik & Carol Nichols | Advanced | Comprehensive foundation for memory safety, ownership, and concurrency. |
+| 7 | *Mastering Ethereum* — Andreas M. Antonopoulos & Gavin Wood | Advanced | Deep technical breakdown of the EVM, smart contracts, and cryptography. |
+
+---
 
 ### Reading rule
 

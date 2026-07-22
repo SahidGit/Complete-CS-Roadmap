@@ -11,6 +11,11 @@ Official documentation is the primary source; courses and blogs are supporting e
 | React | [React Learn](https://react.dev/learn) | [react](https://github.com/facebook/react) | [React docs tutorial](https://react.dev/learn/tutorial-tic-tac-toe) | [Frontend Mentor](https://www.frontendmentor.io/) | [React Router](https://reactrouter.com/home) |
 | Node/Express | [Node docs](https://nodejs.org/docs/latest/api/) | [node](https://github.com/nodejs/node) | [freeCodeCamp Node course](https://www.youtube.com/@freecodecamp) | [HackerRank](https://www.hackerrank.com/) | [Express guide](https://expressjs.com/en/guide/routing.html) |
 | MongoDB | [MongoDB University](https://learn.mongodb.com/) | [mongo](https://github.com/mongodb/mongo) | [MongoDB docs](https://www.mongodb.com/docs/) | [MongoDB playground](https://www.mongodb.com/docs/mongodb-vscode/playgrounds/) | [Mongoose docs](https://mongoosejs.com/docs/) |
+| Rust | [The Rust Book](https://doc.rust-lang.org/book/) | [rust-lang](https://github.com/rust-lang/rust) | [Rust by Example](https://doc.rust-lang.org/rust-by-example/) | [Exercism Rust](https://exercism.org/tracks/rust) | [Rust Reference](https://doc.rust-lang.org/reference/) |
+| Solana | [Solana Docs](https://docs.solana.com/) | [solana-labs](https://github.com/solana-labs/solana) | [Solana Cookbook](https://solanacookbook.com/) | [Solana Developers](https://solana.com/developers) | [Solana Web3.js](https://solana-labs.github.io/solana-web3.js/) |
+| Anchor | [Anchor Docs](https://www.anchor-lang.com/) | [anchor](https://github.com/coral-xyz/anchor) | [Anchor Tutorial](https://www.anchor-lang.com/docs/installation) | [Anchor Examples](https://github.com/coral-xyz/anchor/tree/master/examples) | [Anchor IDL Spec](https://www.anchor-lang.com/docs/idl) |
+
+---
 
 ## How to choose a resource
 
