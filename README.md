@@ -10,7 +10,7 @@
 [![GitHub PRs](https://img.shields.io/github/issues-pr/SahidGit/Complete-CS-Roadmap?style=for-the-badge&logo=github)](https://github.com/SahidGit/Complete-CS-Roadmap/pulls)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
-**⏱️ Duration:** 60 Weeks | **📚 Total Hours:** 460+ | **📈 Difficulty:** Beginner → Advanced | **🎯 Goal:** Full-Stack & Web3 Software Engineer
+**⏱️ Duration:** 60 Weeks | **📚 Total Hours:** 1,000+ | **📈 Difficulty:** Beginner → Advanced | **🎯 Goal:** Full-Stack, Systems, AI, & Blockchain Engineer
 
 [🌍 Website](https://sahidgit.github.io/Complete-CS-Roadmap/) · [📖 Documentation](RESOURCES.md) · [💬 Discussions](https://github.com/SahidGit/Complete-CS-Roadmap/discussions) · [🤝 Contributing](CONTRIBUTING.md)
 
@@ -36,12 +36,12 @@
 
 ## 🎯 About This Roadmap
 
-This is a **complete, structured Computer Science & Web3 learning roadmap** designed to take you from absolute beginner to professional full-stack and blockchain engineer across **60 weeks**. 
+This is a **complete, structured Computer Science & Web3 learning roadmap** designed to take you from absolute beginner to professional full-stack, systems, AI, and blockchain engineer across **60 weeks**, organized into 5 thematic blocks.
 
 ### Why This Roadmap?
 
-✅ **Structured Learning Path** - Clear progression from fundamentals to Web3 & scaling  
-✅ **Hands-On Projects** - 60+ real-world projects to build your portfolio  
+✅ **Structured Learning Path** - Clear progression from fundamentals to AI, Systems, and Web3  
+✅ **Hands-On Projects** - 130+ real-world projects to build your portfolio  
 ✅ **Official Resources** - Links to official documentation, not outdated blogs  
 ✅ **Production Ready** - Every topic includes best practices, security audits, and modern standards  
 ✅ **Community Driven** - Open source, community-reviewed, constantly updated  
@@ -52,10 +52,10 @@ This is a **complete, structured Computer Science & Web3 learning roadmap** desi
 | Metric | Value |
 |--------|-------|
 | **Total Weeks** | 60 |
-| **Total Hours** | 460+ |
-| **Total Projects** | 60+ |
-| **Topics Covered** | 100+ |
-| **Resources** | 800+ |
+| **Total Hours** | 1,000+ |
+| **Total Projects** | 130+ |
+| **Topics Covered** | 200+ |
+| **Resources** | 1,200+ |
 | **Difficulty Path** | ⭐ → ⭐⭐⭐⭐⭐ |
 
 ---
@@ -73,24 +73,15 @@ Complete-CS-Roadmap/
 ├── PROGRESS-TRACKER.md          # Learning checklist
 ├── LICENSE                      # MIT License
 ├── CONTRIBUTING.md              # Contribution guidelines
-├── CODE_OF_CONDUCT.md           # Community guidelines
-├── SECURITY.md                  # Security policy
-├── CHANGELOG.md                 # Version history
 │
-├── weeks/                       # 60-Week Comprehensive Modules
-│   ├── Week-01.md ... Week-10.md # Web Development Core (Weeks 1–10)
-│   ├── Week-51.md                # Cryptography & Merkle Trees
-│   ├── Week-52.md                # Rust Programming & Borrowing
-│   ├── Week-53.md                # Blockchain Fundamentals & Solana
-│   ├── Week-54.md                # Solana Development & Accounts
-│   ├── Week-55.md                # Anchor Framework & Constraints
-│   ├── Week-56.md                # Web3 Frontend Integration
-│   ├── Week-57.md                # DeFi AMMs & Yield Vaults
-│   ├── Week-58.md                # Smart Contract Security & Auditing
-│   ├── Week-59.md                # L2 Rollups & Scaling
-│   └── Week-60.md                # Capstone Web3 DApp & Showcase
+├── weeks/                       # Weekly Learning Modules
+│   ├── Week-01.md ... Week-11.md # Block 1: Web Development & Node.js Core
+│   ├── Week-21.md ... Week-30.md # Block 2: Data Structures & Algorithms (DSA)
+│   ├── Week-31.md ... Week-33.md # Block 3: Systems, Networking & Containerization
+│   ├── Week-41.md ... Week-50.md # Block 4: AI, Data Science & ML Engineering
+│   └── Week-51.md ... Week-60.md # Block 5: Web3, Rust & Solana Blockchain
 │
-├── Web3/                         # Web3 Reference Manuals (14 Modules)
+├── Web3/                         # Web3 Reference Manuals
 ├── Portfolio/                    # Developer Portfolio Guidelines
 ├── Career/                       # Technical Interview & Resume Guides
 ├── docs/                         # GitHub Pages Documentation Portal
@@ -104,6 +95,7 @@ Complete-CS-Roadmap/
 
 ### Week-by-Week Overview
 
+#### 🌐 Block 1: Web Development & Backend Core
 | Week | Topic | Difficulty | Hours | Projects |
 |------|-------|------------|-------|----------|
 | **1** | Git, GitHub, Linux, CLI | 🟢 Beginner | 20 | 3 |
@@ -116,17 +108,57 @@ Complete-CS-Roadmap/
 | **8** | Advanced React | 🟠 Advanced | 26 | 3 |
 | **9** | Node.js & Express | 🟠 Advanced | 24 | 3 |
 | **10** | MongoDB & Deployment | 🟠 Advanced | 20 | 3 |
-| **51** | Cryptography & Merkle Trees | 🟡 Intermediate | 24 | 3 |
-| **52** | Rust Programming & Ownership | 🔴 Advanced | 24 | 3 |
-| **53** | Blockchain Fundamentals & PoH | 🟡 Intermediate | 24 | 3 |
-| **54** | Solana Programming & Web3.js | 🔴 Advanced | 24 | 3 |
+| **11** | Advanced Node.js (Event Loop, Streams) | 🔴 Advanced | 40 | 2 |
+
+#### 🧮 Block 2: Data Structures & Algorithms (DSA)
+| Week | Topic | Difficulty | Hours | Projects |
+|------|-------|------------|-------|----------|
+| **21** | Programming Foundations & Big O | 🟡 Intermediate | 20 | 3 |
+| **22** | Arrays, Strings & Sliding Window | 🟡 Intermediate | 22 | 3 |
+| **23** | Linked Lists, Stacks & Queues | 🟡 Intermediate | 24 | 3 |
+| **24** | Hash Maps, Heaps & Searching | 🟡 Intermediate | 24 | 3 |
+| **25** | Trees, BST, AVL & Trie Structures | 🔴 Advanced | 24 | 3 |
+| **26** | Graph Algorithms & Network Routing | 🔴 Advanced | 24 | 3 |
+| **27** | Dynamic Programming & Optimization | 🔴 Advanced | 24 | 3 |
+| **28** | Greedy, Backtracking & Divide & Conquer | 🟡 Intermediate | 24 | 3 |
+| **29** | Advanced Data Structures & Strings | 🔴 Advanced | 24 | 3 |
+| **30** | Competitive Programming & Interview Prep | 🔴 Advanced | 24 | 3 |
+
+#### ⚙️ Block 3: Linux, Networking & DevOps Core
+| Week | Topic | Difficulty | Hours | Projects |
+|------|-------|------------|-------|----------|
+| **31** | Linux Mastery & Shell Scripting | 🟡 Intermediate | 24 | 3 |
+| **32** | Computer Networking Fundamentals | 🟡 Intermediate | 22 | 3 |
+| **33** | Docker & Containerization | 🟠 Advanced | 24 | 3 |
+
+#### 🧠 Block 4: Artificial Intelligence & Machine Learning
+| Week | Topic | Difficulty | Hours | Projects |
+|------|-------|------------|-------|----------|
+| **41** | Python for AI/ML & Data Science | 🟠 Advanced | 24 | 3 |
+| **42** | Mathematics for AI/ML (Linear Algebra, Calc) | 🟠 Advanced | 24 | 3 |
+| **43** | Machine Learning Fundamentals | 🟠 Advanced | 24 | 3 |
+| **44** | Deep Learning Fundamentals | 🔴 Advanced | 26 | 3 |
+| **45** | PyTorch & TensorFlow Frameworks | 🔴 Advanced | 24 | 3 |
+| **46** | NLP & Transformers | 🔴 Advanced | 24 | 3 |
+| **47** | LLM Engineering & Prompt Engineering | 🔴 Advanced | 24 | 3 |
+| **48** | Vector Databases & RAG Systems | 🔴 Advanced | 22 | 3 |
+| **49** | AI Agents & Multi-Agent Systems | 🔴 Advanced | 24 | 3 |
+| **50** | MLOps & Production Deployment | 🔴 Advanced | 24 | 3 |
+
+#### ⛓️ Block 5: Web3, Rust & Solana Blockchain
+| Week | Topic | Difficulty | Hours | Projects |
+|------|-------|------------|-------|----------|
+| **51** | Cryptography & Digital Signatures | 🔴 Advanced | 24 | 3 |
+| **52** | Rust Systems Programming | 🔴 Advanced | 24 | 3 |
+| **53** | Blockchain Architecture & Consensus | 🟡 Intermediate | 24 | 3 |
+| **54** | Solana Architecture & Web3.js | 🔴 Advanced | 24 | 3 |
 | **55** | Anchor Framework & PDAs | 🔴 Advanced | 24 | 3 |
 | **56** | Web3 Frontend Wallet Adapters | 🟡 Intermediate | 24 | 3 |
 | **57** | DeFi AMMs & Price Oracles | 🔴 Advanced | 24 | 3 |
 | **58** | Smart Contract Auditing & Security | 🔴 Advanced | 24 | 3 |
 | **59** | Scaling, Rollups & Bridges | 🔴 Advanced | 24 | 3 |
-| **60** | Capstone DApp & Showcase | 🔴 Advanced | 24 | 3 |
-| | **TOTAL (Including Web3 Extension)** | | **460+** | **60+** |
+| **60** | Capstone DApp & Showcase Portfolio | 🔴 Advanced | 24 | 3 |
+| | **TOTAL ROADMAP COMMITMENT** | | **1,040+ Hours** | **130+ Projects** |
 
 ---
 
@@ -156,7 +188,7 @@ Each week includes:
 - 💻 Mini projects
 - ✅ Revision checklist
 
-Begin with [Week 01](weeks/Week-01.md) or jump to [Week 51](weeks/Week-51.md) for the Web3 extension.
+Begin with [Week 01](weeks/Week-01.md) or select your specialization block.
 
 ### Step 4: Build & Showcase
 

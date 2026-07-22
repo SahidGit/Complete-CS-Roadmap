@@ -907,6 +907,56 @@
   .diff-i{background:var(--warning-soft); color:var(--warning);}
   .diff-a{background:var(--error-soft); color:var(--error);}
 
+  /* ---------- specialization tabs ---------- */
+  .specialization-tabs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 40px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .specialization-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .tab-btn {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 13.5px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--line-strong);
+    color: var(--text-dim);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all var(--transition-fast);
+  }
+  .tab-btn:hover {
+    color: var(--text);
+    border-color: var(--accent-line);
+    background: var(--accent-soft);
+  }
+  .tab-btn.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(110, 86, 207, 0.3);
+  }
+  .timeline-block {
+    display: none;
+  }
+  .timeline-block.active {
+    display: block;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
   /* ---------- resources ---------- */
   .res-grid {
     display: grid;
@@ -1383,10 +1433,10 @@
       <p class="section-desc">A structured, project-first curriculum designed to keep you focused, building, and making consistent progress.</p>
     </div>
     <div class="stats-grid reveal">
-      <div class="stat"><div class="stat-num" data-target="10"><span class="accent">10</span></div><div class="stat-label">weeks</div></div>
-      <div class="stat"><div class="stat-num" data-target="220" data-suffix="+">220<span class="accent">+</span></div><div class="stat-label">hours</div></div>
-      <div class="stat"><div class="stat-num" data-target="30" data-suffix="+">30<span class="accent">+</span></div><div class="stat-label">projects</div></div>
-      <div class="stat"><div class="stat-num" data-target="500" data-suffix="+">500<span class="accent">+</span></div><div class="stat-label">resources</div></div>
+      <div class="stat"><div class="stat-num" data-target="60"><span class="accent">60</span></div><div class="stat-label">weeks</div></div>
+      <div class="stat"><div class="stat-num" data-target="1000" data-suffix="+">1000<span class="accent">+</span></div><div class="stat-label">hours</div></div>
+      <div class="stat"><div class="stat-num" data-target="130" data-suffix="+">130<span class="accent">+</span></div><div class="stat-label">projects</div></div>
+      <div class="stat"><div class="stat-num" data-target="1200" data-suffix="+">1200<span class="accent">+</span></div><div class="stat-label">resources</div></div>
     </div>
   </div>
 </section>
@@ -1395,91 +1445,223 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="section-label">Learning path</span>
-      <h2 class="section-title">Ten weeks, in the order they're meant to be learned.</h2>
-      <p class="section-desc">No skipping ahead. Each week builds on the last and ends with a project you actually finish.</p>
+      <h2 class="section-title">The Complete 60-Week CS &amp; Web3 Curriculum</h2>
+      <p class="section-desc">Select a specialization block below to explore detailed week-by-week guides and hands-on portfolio projects.</p>
     </div>
 
-    <div class="timeline reveal">
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-01.md" target="_blank" rel="noopener noreferrer" class="week done">
-        <div class="week-row"><span class="week-tag">WEEK_01</span><span class="week-title">Git, GitHub &amp; Linux CLI</span></div>
-        <div class="week-meta"><span class="diff diff-b">Beginner</span><span>20 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-02.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_02</span><span class="week-title">HTML5 &amp; Semantic Markup</span></div>
-        <div class="week-meta"><span class="diff diff-b">Beginner</span><span>18 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-03.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_03</span><span class="week-title">CSS &amp; Responsive Design</span></div>
-        <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>22 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-04.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_04</span><span class="week-title">JavaScript Basics</span></div>
-        <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>24 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-05.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_05</span><span class="week-title">Advanced JavaScript</span></div>
-        <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>26 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-06.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_06</span><span class="week-title">TypeScript</span></div>
-        <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>16 hrs</span><span>2 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-07.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_07</span><span class="week-title">React Fundamentals</span></div>
-        <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-08.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_08</span><span class="week-title">Advanced React</span></div>
-        <div class="week-meta"><span class="diff diff-a">Advanced</span><span>26 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-09.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_09</span><span class="week-title">Node.js &amp; Express</span></div>
-        <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-10.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_10</span><span class="week-title">MongoDB &amp; Deployment</span></div>
-        <div class="week-meta"><span class="diff diff-a">Advanced</span><span>20 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-51.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_51</span><span class="week-title">Cryptography &amp; Merkle Trees</span></div>
-        <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>24 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-52.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_52</span><span class="week-title">Rust Programming &amp; Ownership</span></div>
-        <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-53.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_53</span><span class="week-title">Blockchain Fundamentals &amp; PoH</span></div>
-        <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>24 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-54.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_54</span><span class="week-title">Solana Programming &amp; Web3.js</span></div>
-        <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-55.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_55</span><span class="week-title">Anchor Framework &amp; PDAs</span></div>
-        <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-56.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_56</span><span class="week-title">Web3 Frontend Wallet Integration</span></div>
-        <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>24 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-57.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_57</span><span class="week-title">DeFi AMMs &amp; Price Oracles</span></div>
-        <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-58.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_58</span><span class="week-title">Smart Contract Auditing &amp; Security</span></div>
-        <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-59.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_59</span><span class="week-title">Layer 2 Rollups &amp; Bridges</span></div>
-        <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
-      </a>
-      <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-60.md" target="_blank" rel="noopener noreferrer" class="week">
-        <div class="week-row"><span class="week-tag">WEEK_60</span><span class="week-title">Capstone Web3 DApp &amp; Showcase</span></div>
-        <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
-      </a>
+    <!-- Specialization Tab Switchers -->
+    <div class="specialization-tabs reveal">
+      <button class="tab-btn active" onclick="switchBlock(1)">Block 1: Web Dev Core</button>
+      <button class="tab-btn" onclick="switchBlock(2)">Block 2: Algorithms &amp; DSA</button>
+      <button class="tab-btn" onclick="switchBlock(3)">Block 3: Systems &amp; DevOps</button>
+      <button class="tab-btn" onclick="switchBlock(4)">Block 4: AI &amp; ML Engineering</button>
+      <button class="tab-btn" onclick="switchBlock(5)">Block 5: Web3 &amp; Blockchain</button>
+    </div>
+
+    <!-- Block 1: Web Development & Node.js Core -->
+    <div id="block-1" class="timeline-block active reveal">
+      <div class="timeline">
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-01.md" target="_blank" rel="noopener noreferrer" class="week done">
+          <div class="week-row"><span class="week-tag">WEEK_01</span><span class="week-title">Git, GitHub &amp; Linux CLI</span></div>
+          <div class="week-meta"><span class="diff diff-b">Beginner</span><span>20 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-02.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_02</span><span class="week-title">HTML5 &amp; Semantic Markup</span></div>
+          <div class="week-meta"><span class="diff diff-b">Beginner</span><span>18 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-03.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_03</span><span class="week-title">CSS &amp; Responsive Design</span></div>
+          <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>22 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-04.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_04</span><span class="week-title">JavaScript Basics</span></div>
+          <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-05.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_05</span><span class="week-title">Advanced JavaScript &amp; Browser APIs</span></div>
+          <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>26 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-06.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_06</span><span class="week-title">TypeScript Scaling</span></div>
+          <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>16 hrs</span><span>2 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-07.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_07</span><span class="week-title">React Fundamentals</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-08.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_08</span><span class="week-title">Advanced React &amp; State</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>26 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-09.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_09</span><span class="week-title">Node.js, Express &amp; REST APIs</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-10.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_10</span><span class="week-title">MongoDB, Mongoose &amp; Deployment</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>20 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-11.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_11</span><span class="week-title">Advanced Node.js (Event Loop, Streams)</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>40 hrs</span><span>2 projects</span></div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Block 2: Algorithms & Data Structures (DSA) -->
+    <div id="block-2" class="timeline-block reveal">
+      <div class="timeline">
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-21.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_21</span><span class="week-title">Programming Foundations &amp; Complexity Analysis</span></div>
+          <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>20 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-22.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_22</span><span class="week-title">Arrays, Strings &amp; Sliding Window</span></div>
+          <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>22 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-23.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_23</span><span class="week-title">Linked Lists, Stacks &amp; Queues</span></div>
+          <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-24.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_24</span><span class="week-title">Hash Maps, Heaps &amp; Searching Algorithms</span></div>
+          <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-25.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_25</span><span class="week-title">Trees, BST, AVL &amp; Trie Structures</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-26.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_26</span><span class="week-title">Graph Algorithms &amp; Network Routing</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-27.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_27</span><span class="week-title">Dynamic Programming &amp; Complexity Optimization</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-28.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_28</span><span class="week-title">Greedy, Backtracking &amp; Divide &amp; Conquer</span></div>
+          <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-29.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_29</span><span class="week-title">Advanced Data Structures &amp; String Algorithms</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-30.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_30</span><span class="week-title">Competitive Programming &amp; Interview Prep</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Block 3: Linux, Networking & DevOps Core -->
+    <div id="block-3" class="timeline-block reveal">
+      <div class="timeline">
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-31.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_31</span><span class="week-title">Linux Mastery &amp; Shell Scripting</span></div>
+          <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-32.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_32</span><span class="week-title">Computer Networking Fundamentals</span></div>
+          <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>22 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-33.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_33</span><span class="week-title">Docker &amp; Containerization</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Block 4: AI & ML Engineering -->
+    <div id="block-4" class="timeline-block reveal">
+      <div class="timeline">
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-41.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_41</span><span class="week-title">Python for AI/ML &amp; Data Science</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-42.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_42</span><span class="week-title">Mathematics for AI/ML (Calculus, Algebra)</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-43.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_43</span><span class="week-title">Machine Learning Fundamentals</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-44.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_44</span><span class="week-title">Deep Learning Fundamentals</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>26 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-45.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_45</span><span class="week-title">PyTorch &amp; TensorFlow Frameworks</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-46.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_46</span><span class="week-title">NLP &amp; Transformers</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-47.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_47</span><span class="week-title">LLM Engineering &amp; Prompt Engineering</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-48.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_48</span><span class="week-title">Vector Databases &amp; RAG Systems</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>22 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-49.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_49</span><span class="week-title">AI Agents &amp; Multi-Agent Systems</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-50.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_50</span><span class="week-title">MLOps &amp; Production Deployment</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Block 5: Web3 & Blockchain Engineering -->
+    <div id="block-5" class="timeline-block reveal">
+      <div class="timeline">
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-51.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_51</span><span class="week-title">Cryptography &amp; Digital Signatures</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-52.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_52</span><span class="week-title">Rust Systems Programming</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-53.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_53</span><span class="week-title">Blockchain Architecture &amp; Consensus</span></div>
+          <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-54.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_54</span><span class="week-title">Solana Architecture &amp; Web3.js</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-55.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_55</span><span class="week-title">Anchor Framework &amp; Smart Contracts</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-56.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_56</span><span class="week-title">Web3 &amp; Frontend Wallet Integration</span></div>
+          <div class="week-meta"><span class="diff diff-i">Intermediate</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-57.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_57</span><span class="week-title">Decentralized Finance (DeFi) Engines</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-58.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_58</span><span class="week-title">Smart Contract Auditing &amp; Security</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-59.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_59</span><span class="week-title">Advanced Blockchain, Scaling &amp; Layer 2</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+        <a href="https://github.com/SahidGit/Complete-CS-Roadmap/blob/main/weeks/Week-60.md" target="_blank" rel="noopener noreferrer" class="week">
+          <div class="week-row"><span class="week-tag">WEEK_60</span><span class="week-title">Capstone Web3 DApp &amp; Portfolio Showcase</span></div>
+          <div class="week-meta"><span class="diff diff-a">Advanced</span><span>24 hrs</span><span>3 projects</span></div>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -1618,12 +1800,39 @@
   const dynamicBadge = document.querySelector('.headline .badge');
   const dynamicText = document.querySelector('.headline .grad');
   const phrases = [
-    "in 10 weeks.",
-    "in 30+ projects.",
-    "in 500 resources.",
-    "in 220 hours."
+    "in 60 weeks.",
+    "in 130+ projects.",
+    "in 1,200 resources.",
+    "in 1,000 hours."
   ];
   let phraseIndex = 0;
+
+  /* ── Tab Switcher Logic for Roadmap Blocks ── */
+  window.switchBlock = function(blockNum) {
+    // Update active tab button style
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    tabBtns.forEach((btn, index) => {
+      if (index === (blockNum - 1)) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    // Update active timeline block visibility
+    const blocks = document.querySelectorAll('.timeline-block');
+    blocks.forEach((block) => {
+      block.classList.remove('active');
+    });
+    
+    const targetBlock = document.getElementById('block-' + blockNum);
+    if (targetBlock) {
+      targetBlock.classList.add('active');
+      // Trigger scroll reveals inside newly shown block
+      const newReveals = targetBlock.querySelectorAll('.reveal');
+      newReveals.forEach(el => el.classList.add('in'));
+    }
+  };
 
   setInterval(() => {
     dynamicBadge.style.opacity = 0;
